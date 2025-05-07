@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0" version="26.2.14" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0" version="26.2.14" pages="3">
   <diagram name="Página-1" id="VWV7L-8AitAB_th0YDwP">
     <mxGraphModel dx="1385" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -117,6 +117,57 @@
         </mxCell>
         <mxCell id="30EIPQm_PSXQxcyu74Cn-1" value="ÁNGEL POSTIGO RODRÍGUEZ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="580" y="640" width="200" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="CSdBkD0AY5qeipoWqL5z" name="Página-3">
+    <mxGraphModel dx="569" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-1" value="En una tienda online, se venden varios productos. Algunos de estos productos son&lt;br/&gt;electrónicos, mientras que otros son artículos de ropa. Ambos tipos de productos comparten&lt;br/&gt;características comunes, como el nombre y el precio. Sin embargo, los electrónicos tienen&lt;br/&gt;una garantía adicional, mientras que los artículos de ropa pueden tener un descuento&lt;br/&gt;dependiendo de la oferta. Cuando se realiza la compra, el precio total debe calcularse&lt;br/&gt;teniendo en cuenta esas características adicionales.&lt;br/&gt;El sistema debe permitir calcular el precio total de un producto, considerando los factores&lt;br/&gt;adicionales que puedan aplicarse según su categoría. Los productos electrónicos tendrán&lt;br/&gt;un costo adicional por la garantía, mientras que las prendas de ropa pueden aplicar&lt;br/&gt;descuentos dependiendo de las promociones vigentes.&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="159" y="18" width="510" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-2" value="Producto" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="344" y="240" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-3" value="+nombre: String&lt;div&gt;+precio: double&lt;/div&gt;" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z2T4-qPSvMDNXYwVYKco-2">
+          <mxGeometry y="30" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-4" value="+calcularPrecioTotal(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z2T4-qPSvMDNXYwVYKco-2">
+          <mxGeometry y="70" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-6" value="ProductoOnline" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="440" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-7" value="+garantia: int" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z2T4-qPSvMDNXYwVYKco-6">
+          <mxGeometry y="30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-8" value="+calcularPrecioTotal(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z2T4-qPSvMDNXYwVYKco-6">
+          <mxGeometry y="60" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-14" value="ProductoRopa" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="440" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-15" value="+descuento: double" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z2T4-qPSvMDNXYwVYKco-14">
+          <mxGeometry y="30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-16" value="+calcularPrecioTotal(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z2T4-qPSvMDNXYwVYKco-14">
+          <mxGeometry y="60" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-18" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="z2T4-qPSvMDNXYwVYKco-14" target="z2T4-qPSvMDNXYwVYKco-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="464" y="440" as="sourcePoint" />
+            <mxPoint x="514" y="390" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z2T4-qPSvMDNXYwVYKco-19" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="z2T4-qPSvMDNXYwVYKco-6" target="z2T4-qPSvMDNXYwVYKco-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="440" as="sourcePoint" />
+            <mxPoint x="290" y="390" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
