@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.3.0" pages="7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.3.0" pages="8">
   <diagram name="Página-1" id="VWV7L-8AitAB_th0YDwP">
     <mxGraphModel dx="1385" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -407,6 +407,74 @@
         </mxCell>
         <mxCell id="D-d-VwLQLXkcsF_zNo95-1" value="ÁNGEL POSTIGO RODRÍGUEZ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="590" y="610" width="200" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="liiHJpKy7rkFdGfIf3F6" name="Página-8">
+    <mxGraphModel dx="1280" dy="533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-1" value="En un sistema de clasificación de películas, existen diferentes géneros: comedia, drama y&lt;br/&gt;acción. Cada película tiene un título, un director y una duración, pero los géneros varían en&lt;br/&gt;características adicionales. Las películas de acción tienen un nivel de violencia que puede&lt;br/&gt;ser clasificado, mientras que las películas de comedia tienen una clasificación por edad&lt;br/&gt;recomendada.&lt;br/&gt;El sistema debe gestionar las películas de acuerdo con su género y mostrar información&lt;br/&gt;adicional según el tipo de película. Las comedias deben incluir la clasificación por edad,&lt;br/&gt;mientras que las películas de acción deben incluir el nivel de violencia.&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="159" y="80" width="510" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-2" value="Accion" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="410" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-3" value="+nivelViolencia: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="q3qwYAnlb6AxDmndLDLL-2">
+          <mxGeometry y="30" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-4" value="+mostrarInfo(): void" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="q3qwYAnlb6AxDmndLDLL-2">
+          <mxGeometry y="70" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-6" value="Drama" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="343.5" y="415" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-7" value="." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="q3qwYAnlb6AxDmndLDLL-6">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-8" value="+mostrarInfo(): void" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="q3qwYAnlb6AxDmndLDLL-6">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-10" value="Comedia" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="410" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-11" value="+edadrecomendada: int" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="q3qwYAnlb6AxDmndLDLL-10">
+          <mxGeometry y="30" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-12" value="+mostrarInfo(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="q3qwYAnlb6AxDmndLDLL-10">
+          <mxGeometry y="70" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-14" value="Pelicula" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="250" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-15" value="+titulo: String&lt;div&gt;+director: String&lt;/div&gt;&lt;div&gt;+duracion: time&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="q3qwYAnlb6AxDmndLDLL-14">
+          <mxGeometry y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-16" value="+mostrarInfo(): void" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="q3qwYAnlb6AxDmndLDLL-14">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-18" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="q3qwYAnlb6AxDmndLDLL-15" target="q3qwYAnlb6AxDmndLDLL-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-19" value="" style="endArrow=none;html=1;rounded=0;entryX=0.45;entryY=0.933;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="q3qwYAnlb6AxDmndLDLL-6" target="q3qwYAnlb6AxDmndLDLL-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q3qwYAnlb6AxDmndLDLL-20" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="q3qwYAnlb6AxDmndLDLL-10" target="q3qwYAnlb6AxDmndLDLL-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V49Fsgdp53xajdA2bQNn-1" value="ÁNGEL POSTIGO RODRÍGUEZ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="555" width="200" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
